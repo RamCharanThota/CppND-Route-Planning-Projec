@@ -55,8 +55,8 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node)
 //function to compare f=(g+h) values of two nodes
 bool Compare(RouteModel::Node *node1, RouteModel::Node *node2)
 {
-    int f_val_node1 = node1->h_value + node1->g_value; // calculating fvalue of first node
-    int f_val_node2 = node2->h_value + node2->g_value; // calculating fvalue of second node
+    double f_val_node1 = node1->h_value + node1->g_value; // calculating fvalue of first node
+    double f_val_node2 = node2->h_value + node2->g_value; // calculating fvalue of second node
 
     if (f_val_node1 > f_val_node2)
     {
